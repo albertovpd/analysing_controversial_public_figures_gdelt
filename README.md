@@ -16,6 +16,8 @@ Let's check what the news media says using the **Gdelt Project** and filtering b
 -------------------------
 -------------------------
 
-### Comparison about what the spanish and other countries media says about the same topic:
+### K_project:
 
 - *In research*
+
+I do not pretent to *get political*, it is just the fact that there are *delicate* topics. We can be subdued by rumours, or we can shed some light. 

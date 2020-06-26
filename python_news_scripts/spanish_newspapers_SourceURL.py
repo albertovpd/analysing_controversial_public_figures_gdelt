@@ -382,4 +382,4 @@ spanish_media=set(raw_list2)
 
 
 newspapers=pd.DataFrame(spanish_media, columns=["spanish_media"])
-newspapers.to_csv('./output/spanish_media_full_domain.csv')
+newspapers.to_csv('../output/spanish_media_SourceURL.csv')

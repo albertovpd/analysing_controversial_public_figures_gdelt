@@ -9,7 +9,7 @@ swiss_list=[
     "https://www.20min.ch/",
     "https://www.24heures.ch/",
     "https://www.aargauerzeitung.ch/",
-    "http://www.agefi.com",
+    
     "https://www.andelfinger.ch/",
     "https://wn.com/Anglo_swiss/news",
     "https://www.appenzell24.ch/news.html",
@@ -43,8 +43,30 @@ swiss_list=[
     "https://www.laliberte.ch/",
     "https://www.laregione.ch/",
     "https://www.bielertagblatt.ch/",
+    "https://www.blick.ch/"
+    "https://www.nzz.ch/"
+    "https://www.20min.ch/"
+    "https://www.aargauerzeitung.ch/"
+    "https://www.tagesanzeiger.ch/sonntagszeitung"
+    "https://www.luzernerzeitung.ch/"
+    "https://www.bzbasel.ch/"
+    "https://www.bazonline.ch/"
+    "https://www.bernerzeitung.ch/"
+    "https://www.20min.ch/"
+    "https://www.nzz.ch/"
+    "https://www.nzz.ch/"
+    "https://www.blick.ch/"
+    "https://www.tagesanzeiger.ch/"
+
+    "https://www.romandie.com/"
+    "http://www.agefi.com",
+
+
 
 ]
+# all important found newspapers but romainde and agefi end up with ".ch",
+# so instead of creating a swiss table in BigQuery, I just will filter by url domain.
+# bigquery script in this project
 
 swiss_media=set(swiss_list)
 

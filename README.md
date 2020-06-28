@@ -189,17 +189,27 @@ https://www.ara.cat/en/Meanwhile-in-the-Zarzuela-Palace_0_2418358198.html
 
 # 4. Conclusion.
 
+
+From the 6 analysed peaks in Spanish and Swiss newspapers: 
+
+- 1 tagged as very positive is democratically very negative (or maybe it is subjective the fact of censoring comics). 
+- 2 are not about the person we are studying.
+
+
+
 - **Question 1:** Is the spanish media hiding delicate articles about certain public figures? 
 
-If my code is right, it is not possible to know using the Gdelt Database. The King Emeritus is not tagged in every written article as Actor1Name="KING JUAN CARLOS", the keyword I am trying to monitor. What about when the King stopped the coup d'état on 23.02.1981? What about the polemic of hunting elephants?
+I do not know the answer, but I do know, if my data extraction was right, that **events** table of Gdelt and its column **Actor1Name** could be a not not reliable source, depending on what public figure you are studying.
+
+The King Emeritus is not tagged in every written article as **Actor1Name**="KING JUAN CARLOS", the keyword I am trying to monitor. What about when the King stopped the coup d'état on 23.02.1981? What about the polemic of hunting elephants?
 
 - **Question 2:** Can we use the Gdelt Database to monitor *sometimes controversial* public figures? 
 
 The answer seems to be: It depends on what public figure you want to monitor.
 
-- Creating a heavier filter to avoid *King Juan Carlos University* or side effects, like appearing in articles in which he is not main character will decrease the amout of obtained news, and it is already very little.
+- Creating a heavier filter to avoid *King Juan Carlos University* or side effects, like appearing in articles in which he is not main character will decrease the amount of obtained news, and it is already very little.
 
-Following all presented ideas, I must conclude Gdelt is not the place to monitor *certain* public figures.
+Following all presented ideas, I must conclude Gdelt is not the place to monitor *certain* public figures, and it always worth to review the sentiment assigned to each article.
 
 # 5. Bibliography.
 

@@ -1,8 +1,14 @@
 # Controversial public figures with Gdelt.
 
-- Disclaimer: **This is not political propaganda of any kind**. *I am just an analytic person who have questions and love researching instead of blindly believing rumors.*
+![alt](output/cover.png)
 
-- Dashboard (under construction) => https://datastudio.google.com/s/nShAIQD96fc
+Dashboard (under construction) => https://datastudio.google.com/s/nShAIQD96fc
+
+----------------------
+
+**Disclaimer: This is not political propaganda of any kind**. *I am just an analytic person who have questions and love researching instead of blindly believing rumors.*
+
+----------------------
 
 # Introduction.
 
@@ -113,55 +119,87 @@ Used columns:
 
 - King tag:
     
-    - I found disappointing the obtaining rows regarding the King Emeritus. They are just a few (about 6k rows from 1979 all over the world). For instance, an important ex politician from Spain (prime minister from 1996 to 2004) has 4k.
+    - I found disappointing the obtaining rows regarding the King Emeritus. They are just a few (about 6k rows from 1979 all over the world). For instance, an important ex politician from Spain (prime minister from 1996 to 2004) has 4k. 
+    
+    Are the daily life, duties and controversial facts of a for-8-years president more relevant than of a more-than-35-years King? On my behalf: No, but I am not in charge of the Gdelt Project.
 
 ![alt](output/aznar.png)
 
-    - Are the daily life, duties and controversial facts of a for-8-years president more relevant than of a more-than-35-years King? On my behalf: Nope, but I am not in charge of the Gdelt Project.
+    
 
 - Table with just recognized spanish and swiss media regarding the King Emeritus:
 
     - Query available in table_just_for_spanish_swiss_media.sql
-    - It gave 75 results from 2013. 6 from the Switzerland filter (8%), the rest from the Spain filter.
+    - It gave 75 results from 2013. Just 6 were from the Switzerland filter (8%), the rest from the Spain filter.
     - They are just very few results, it is shocking.
 
 - Table requesting all the information regardless the domain or source:
 
     - Query available in table_all_media.sql
     - It gave 6274 results from 1979.
-    - Again, it is just very few results, taking into account we are analyzing the whole planet.
+    - Again, it is just very few results, taking into account it is being analyzed the whole planet (in more than 60 languages).
 
 - Sources all times VS sources from 1979.
     
     - Before 2013 there were 4k unspecified sources with very positive sentiment.
-    - *elpais.com* is the only spanish media in top15 mentioning news about the King Emeritus, with a slight positive sentiment (AvgTone = Average Tone of the article).
+    - *elpais.com* is the only spanish media in top15 mentioning news about the King Emeritus, with a slight positive sentiment in average (AvgTone = Average Sentiment of the article).
 
 ![alt](output/comparison_1979.png)
 
 - Sentiment Analysis regarding King Emeritus articles:
     - Swiss news in which *Actor1Name = "KING JUAN CARLOS"* are practically inexistent, just a few. Are the Swiss media not publishing news about the Spanish King? I certainly doubt it. I think it is more possible this public figure is not well tagged and processed by the Gdelt people.
-    - It is interesting to appreciate how the Average Tone curve keeps decaying in the whole planet, nevertheless in Spain it starts to increase in the end. I do not know what it means, but I know that King Juan Carlos University (Madrid) is slightly responsible for some bad and good news about our *Actor1Name*. Lets analyse those peaks (you can use the time selector in the Dashboard):
-
+    - It is interesting to appreciate how the Average Tone curve keeps decaying in the whole planet, nevertheless in Spain it starts to increase in the end. I do not know what it means, but we can check it out:
+    
+    
 ![alt](output/sentiment_global_1979.png)
 
-- 25/12/2013: 
-- 18/06/2014:
-- 15/12/2014:
-- 07/03/2015:
-- 23/03/2016:
-- 23/03/2017:
-- 02/08/2018:
-- 24/03/2020:
+#### Analysing the best and worst scores:
+
+Lets analyse those peaks appearing in the Swiss and Spanish news (above-right). 
+I would like to remember that the dashboard and code are public, everything is completely transparent. If someone detects a code error, please do not hesitate on contacting me.
+
+- 16/06/2014: **Tagged as very positive**... Well... What to say... This is tagged as the second best article about King Emeritus.
+
+![alt](output/06june2014.png)
+https://www.thelocal.es/20140606/spanish-comic-censored-jueves-king-joke
+
+- 05/12/2014: **Tagged as very positive**. *[...] 
+King Felipe VI on Thursday laid out new rules for Spain's royal family that will prevent members from accepting free flights on commercial airlines, luxury gifts or favours which 'could compromise the dignity of the institution'. 
+The new king announced that, as of January 1st 2015, his family would no longer accept gifts and privileges of the kind which caused controversy during the reign of his father, King Juan Carlos I.*
+![alt](output/5dec2014.png)
+https://www.thelocal.es/20141205/spanish-king-rules-out-free-gifts-for-royals
+- 19/02/2015: **Tagged as negative**. The King Emeritus is mentioned in this article, but it is not about him. I guess it is a side-effect of tagging.  *[...] Barcenas was granted permission to go on a two-week holiday with his family beginning on February 20th to the resort that is a favourite of King Juan Carlos.*
+![alt](output/17feb2015.png)
+https://www.thelocal.es/20150219/barcenas-latest-hes-off-on-a-ski-holiday
+
+
+- 08/03/2017: **Tagged as terrible**. This is a scandal of a university called Rey Juan Carlos, in Madrid, not about the King himself.
+![alt](output/08mar2017.png)
+https://www.thelocal.es/20161216/anti-plagiarism-university-head-quits-over-after-being-accused-of-plagiarism
+
+- 18/07/2018: **Tagged as negative**. *Controversy as Spain's King Juan Carlos accused of getting tax ammnesty.*
+![alt](output/18july2018.png)
+https://www.thelocal.es/20180718/controversy-as-spains-king-juan-carlos-accused-of-getting-tax-amnesty
+
+
+- 17/03/2020: **Bad sentiment score**. *[...] Spain’s King Felipe put out a statement —a firewall of sorts— with which he aimed to distance himself from his father, the former King Juan Carlos. King Felipe announced that he will be taking away his father’s allowance and he will “renounce the inheritance” that the King Emeritus intended to leave him and had been amassed by illegal means*.
+![alt](output/17mar2020.png)
+https://www.ara.cat/en/Meanwhile-in-the-Zarzuela-Palace_0_2418358198.html
+
 
 # 4. Conclusion.
 
 - **Question 1:** Is the spanish media hiding delicate articles about certain public figures? 
 
-If my code is right, it is not possible to know using the Gdelt Database because they do not tag in every written article the public figure I am trying to analyse. 
+If my code is right, it is not possible to know using the Gdelt Database. The King Emeritus is not tagged in every written article as Actor1Name="KING JUAN CARLOS", the keyword I am trying to monitor. What about when the King stopped the coup d'état on 23.02.1981? What about the polemic of hunting elephants?
 
 - **Question 2:** Can we use the Gdelt Database to monitor *sometimes controversial* public figures? 
 
 The answer seems to be: It depends on what public figure you want to monitor.
+
+- Creating a heavier filter to avoid *King Juan Carlos University* or side effects, like appearing in articles in which he is not main character will decrease the amout of obtained news, and it is already very little.
+
+Following all presented ideas, I must conclude Gdelt is not the place to monitor *certain* public figures.
 
 # 5. Bibliography.
 
@@ -174,7 +212,7 @@ The answer seems to be: It depends on what public figure you want to monitor.
 -------------------------
 
 
-If it is of interest:
+# If it is of interest:
  
 Automated ETL in Google Cloud Monitoring Google Searches, Twitter and news media in Spain:
 

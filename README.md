@@ -1,6 +1,8 @@
 # Controversial public figures with Gdelt.
 
-Disclaimer: **This is not political propaganda of any kind**. *I am just an analytic person who have questions and love researching instead of blindly believing rumors.*
+- Disclaimer: **This is not political propaganda of any kind**. *I am just an analytic person who have questions and love researching instead of blindly believing rumors.*
+
+- Dashboard (under construction) => https://datastudio.google.com/s/nShAIQD96fc
 
 # Introduction.
 
@@ -138,11 +140,18 @@ Used columns:
 
 - Sentiment Analysis regarding King Emeritus articles:
     - Swiss news in which *Actor1Name = "KING JUAN CARLOS"* are practically inexistent, just a few. Are the Swiss media not publishing news about the Spanish King? I certainly doubt it. I think it is more possible this public figure is not well tagged and processed by the Gdelt people.
-    - It is interesting to appreciate how the Average Tone curve keeps decaying in the whole planet, nevertheless in Spain it starts to increase in the end. I do not know what it means, but I know that King Juan Carlos University (Madrid) is slightly responsible for some bad and good news about our *Actor1Name*. Lets analyse those peaks:
+    - It is interesting to appreciate how the Average Tone curve keeps decaying in the whole planet, nevertheless in Spain it starts to increase in the end. I do not know what it means, but I know that King Juan Carlos University (Madrid) is slightly responsible for some bad and good news about our *Actor1Name*. Lets analyse those peaks (you can use the time selector in the Dashboard):
 
 ![alt](output/sentiment_global_1979.png)
 
-
+- 25/12/2013: 
+- 18/06/2014:
+- 15/12/2014:
+- 07/03/2015:
+- 23/03/2016:
+- 23/03/2017:
+- 02/08/2018:
+- 24/03/2020:
 
 # 4. Conclusion.
 
@@ -169,7 +178,7 @@ If it is of interest:
  
 Automated ETL in Google Cloud Monitoring Google Searches, Twitter and news media in Spain:
 
-![alt](pics/automated_dashboard_preview.gif)
+![alt](output/automated_dashboard_preview.gif)
 
 - Repo => https://github.com/albertovpd/automated_etl_google_cloud-social_dashboard
 

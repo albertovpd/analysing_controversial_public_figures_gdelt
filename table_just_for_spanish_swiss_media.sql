@@ -17,8 +17,8 @@ FROM (
         WHEN Actor1Name ='KING JUAN CARLOS' THEN "Rey Juan Carlos"
     END
       ) AS king,
-    (CASE
         WHEN ( net.host(SOURCEURL) LIKE "%.ch" OR net.host(SOURCEURL) LIKE "%romandie.com%" OR net.host(SOURCEURL) LIKE "%agefi.com%" )THEN "swiss news"
+    (CASE
         WHEN ( net.host(SOURCEURL) LIKE "%.es"
         OR net.host(SOURCEURL) IN (
         SELECT

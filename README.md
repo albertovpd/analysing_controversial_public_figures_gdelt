@@ -79,7 +79,7 @@ Voilá, now we are getting all the information classified in Spain, Switzerland,
 As many important people, "King Juan Carlos" is an entity itself in the Gdelt Project. With this simple query, you can find all news in the world in which he is mentioned or attached to:
 
         SELECT * FROM 
-        
+
         SELECT
             (CASE
                 WHEN Actor1Name ='KING JUAN CARLOS' THEN "Rey Juan Carlos"
@@ -128,6 +128,20 @@ Used columns:
     - Query available in table_all_media.sql
     - It gave 6274 results from 1979.
     - Again, it is just very few results, taking into account we are analyzing the whole planet.
+
+- Sources all times VS sources from 1979.
+    
+    - Before 2013 there were 4k unspecified sources with very positive sentiment.
+    - *elpais.com* is the only spanish media in top15 mentioning news about the King Emeritus, with a slight positive sentiment (AvgTone = Average Tone of the article).
+
+![alt](output/comparison_1979.png)
+
+- Sentiment Analysis regarding King Emeritus articles:
+    - Swiss news in which *Actor1Name = "KING JUAN CARLOS"* are practically inexistent, just a few. Are the Swiss media not publishing news about the Spanish King? I certainly doubt it. I think it is more possible this public figure is not well tagged and processed by the Gdelt people.
+    - It is interesting to appreciate how the Average Tone curve keeps decaying in the whole planet, nevertheless in Spain it starts to increase in the end. I do not know what it means, but I know that King Juan Carlos University (Madrid) is slightly responsible for some bad and good news about our *Actor1Name*. Lets analyse those peaks:
+
+![alt](output/sentiment_global_1979.png)
+
 
 
 # 4. Conclusion.

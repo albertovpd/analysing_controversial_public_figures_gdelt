@@ -153,7 +153,7 @@ Used columns:
     
 ![alt](output/sentiment_global_1979.png)
 
-#### Analysing the best and worst scores:
+#### Analysing the best and worst sentiment scores:
 
 Lets analyse those peaks appearing in the Swiss and Spanish news (above-right). 
 I would like to remember that the dashboard and code are public, everything is completely transparent. If someone detects a code error, please do not hesitate on contacting me.
@@ -186,9 +186,23 @@ https://www.thelocal.es/20180718/controversy-as-spains-king-juan-carlos-accused-
 ![alt](output/17mar2020.png)
 https://www.ara.cat/en/Meanwhile-in-the-Zarzuela-Palace_0_2418358198.html
 
+#### Analysing the country stability through the Goldstein Scale:
+
+![alt](output/goldstein.png)
+
+What happened on 25.04.2018 to have such a bad score? 
+
+https://www.thelocal.es/20180425/ciufentes-resigns 
+
+*[..] The Madrid premier had been battling to stay in office after allegations surfaced earlier this month that she had faked a master’s diploma from Madrid's King Juan Carlos University.*
+
+![alt](output/cifuentes.png)
+
+Again, this article is not about the person we are studying. 
+
+- I did not research on the articles provoking the worst scores in global news. But it is there. If someone find something that it is worth sharing, you can contact me. 
 
 # 4. Conclusion.
-
 
 From the 6 analysed peaks in Spanish and Swiss newspapers: 
 
@@ -210,6 +224,8 @@ The answer seems to be: It depends on what public figure you want to monitor.
 - Creating a heavier filter to avoid *King Juan Carlos University* or side effects, like appearing in articles in which he is not main character will decrease the amount of obtained news, and it is already very little.
 
 Following all presented ideas, I must conclude Gdelt is not the place to monitor *certain* public figures, and it always worth to review the sentiment assigned to each article.
+
+I would like to say, again, I am wide open to code suggestion, corrections or improvements, and I expect for this research to not be used as political tool or similar.
 
 # 5. Bibliography.
 

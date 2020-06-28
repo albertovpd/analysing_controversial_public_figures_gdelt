@@ -2,7 +2,7 @@
 
 ![alt](output/cover.png)
 
-Dashboard (under construction) => https://datastudio.google.com/s/nShAIQD96fc
+**Dashboard  => https://datastudio.google.com/s/nShAIQD96fc**
 
 ----------------------
 
